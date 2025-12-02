@@ -8,21 +8,22 @@
 # Load required library for Multiple Sequence Alignment (MSA)
 library(msa)
 # 1) Read the FASTA file containing OLR1 sequences
+mySequenceFile ="C:/Users/HP/Downloads/R/(OLR1_multi.fasta)"
 mysequences <- readAAStringSet(mySequenceFile)
 print(head(mysequences))
 # 2) Perform Multiple Sequence Alignment (MSA)
-myfirstalingment =msa(mysequences)
+myfirstalignment =msa(mysequences)
 # Print the complete alignment to see the result
-print(myfirstalingment , show  ="complete")
+print(myfirstalignment , show  ="complete")
 # 3) Save the alignment as a PDF with formatting
-msaPrettyPrint(myfirstalingment,
+msaPrettyPrint(myfirstalignment,
                output = "pdf", showNames = "left",
                showNumbering = "right", showConsensus = "bottom",
                askForOverwrite = FALSE , showLogo = "none",
                shadingColors = "blue" , shadingMode = "similar",
                file = "alignment.pdf")
 # 4) Convert the alignment to seqinr format for distance calculation
-OLR1_aln2 = msaConvert(myfirstalingment ,type = "seqinr::alignment")
+OLR1_aln2 = msaConvert(myfirstalignment ,type = "seqinr::alignment")
 # Load seqinr library for calculating sequence distances
 library(seqinr)
 # 5) Calculate pairwise distances using identity
