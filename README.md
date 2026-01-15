@@ -42,11 +42,20 @@ Output
 -Phylogenetic tree plotted in R
 
 Notes
--Make sure all required packages are installed before running the script.
--The tree is constructed using the Neighbor-Joining method based on identity distances.
+Make sure all required packages are installed before running the script.
+The tree is constructed using the Neighbor-Joining method based on identity distances.
+Place your OLR1 FASTA sequences in a file, e.g., OLR1_sequences.fasta.
+Edit the R script to point to your FASTA file
+
+
+Connect  
+- LinkedIn: https://www.linkedin.com/in/farah-elemam-107969323
 
 
 
-    Place your OLR1 FASTA sequences in a file, e.g., OLR1_sequences.fasta.
 
-    Edit the R script to point to your FASTA file
+
+
+
+
+
