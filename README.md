@@ -1,4 +1,4 @@
-Author: Farah Mohamed Elemam > Role:Biochemist & Bioinformatics Researcher 
+
 
 Phylogenetic Analysis of OLR1 Orthologs
 
